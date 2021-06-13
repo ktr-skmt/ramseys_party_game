@@ -1,0 +1,58 @@
+= README =
+:awestruct-layout: base
+:showtitle:
+:prev_section: defining-frontmatter
+:next_section: creating-pages
+:homepage: https://ktr-skmt.github.io/ramseys_party_game/
+:author: Kotaro Sakamoto
+
+* https://ktr-skmt.github.io/ramseys_party_game/[State transition diagram]
+
+== Turn 0 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn0[Turn 0 (1)]
+
+== Turn 1 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn1[Turn 1 (1)]
+
+== Turn 2 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn2[Turn 2 (1)]
+
+== Turn 3 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn3[Turn 3 (1 - 6)]
+
+== Turn 4 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn4-1[Turn 4 (1 - 10)]
+* https://ktr-skmt.github.io/ramseys_party_game/turn4-2[Turn 4 (11 - 20)]
+* https://ktr-skmt.github.io/ramseys_party_game/turn4-3[Turn 4 (21 - 25)]
+
+== Turn 5 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn5-1[Turn 5 (1 - 10)]
+* https://ktr-skmt.github.io/ramseys_party_game/turn5-2[Turn 5 (11 - 20)]
+* https://ktr-skmt.github.io/ramseys_party_game/turn5-3[Turn 5 (21 - 30)]
+
+== Turn 6 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn6[Turn 6 (1 - )]
+
+== Turn 7 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn7[Turn 7 (1 - )]
+
+== Turn 8 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn8[Turn 8 (1 - )]
+
+== Turn 9 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn9[Turn 9 (1 - )]
+
+== Turn 10 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn10[Turn 10 (1 - )]
+
+== Turn 11 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn11[Turn 11 (1 - )]
+
+== Turn 12 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn12[Turn 12 (1 - )]
+
+== Turn 13 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn13[Turn 13 (1 - )]
+
+== Turn 14 ==
+* https://ktr-skmt.github.io/ramseys_party_game/turn14[Turn 14 (1 - )]
