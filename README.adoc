@@ -29,7 +29,7 @@
 * https://ktr-skmt.github.io/ramseys_party_game/turn5-1[Turn 5 (1 - 10)]
 * https://ktr-skmt.github.io/ramseys_party_game/turn5-2[Turn 5 (11 - 20)]
 * https://ktr-skmt.github.io/ramseys_party_game/turn5-3[Turn 5 (21 - 30)]
-* https://ktr-skmt.github.io/ramseys_party_game/turn5-3[Turn 5 (31 - )]
+* https://ktr-skmt.github.io/ramseys_party_game/turn5-4[Turn 5 (31 - )]
 
 == Turn 6 ==
 * https://ktr-skmt.github.io/ramseys_party_game/turn6[Turn 6 (1 - )]
