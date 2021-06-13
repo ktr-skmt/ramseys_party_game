@@ -2,6 +2,22 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <style>
+      g.edge.emphasized > polygon {
+        stroke: #008000;
+        fill: #008000;
+      }
+      g.edge.emphasized > path {
+        stroke: #008000;
+      }
+      g.node.emphasized > ellipse {
+        stroke: #008000;
+        fill: #ffffff;
+      }
+      g.node.emphasized > text {
+        fill: #008000;
+      }
+    </style>
   </head>
   <body>
     <script src="//d3js.org/d3.v4.min.js"></script>
@@ -9,6 +25,7 @@
     <script src="https://unpkg.com/d3-graphviz@1.4.0/build/d3-graphviz.min.js"></script>
     <script src="dot.js"></script>
     <div id="graph" style="text-align: center;"></div>
-    <script>d3.select('#graph').graphviz().fade(false).renderDot(dot.description[0].join(''));</script>
+    <script src="focus.js"></script>
+    <script>d3.select('#graph').graphviz().fade(false).renderDot(dot.description[0].join(''), colorEdges);</script>
   </body>
 </html>
