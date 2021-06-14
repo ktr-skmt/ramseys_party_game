@@ -77,6 +77,7 @@ const dotGraph = [
 const transform = () => {
   const svg = document.getElementById("graph").getElementsByTagName("svg")[0]
   const g = svg.childNodes[1]
+  const pathList = g.getElementsByTagName("path")
   const tfm = svg.createSVGTransform()
   tfm.setTranslate(25.4, 214)
   g.transform.baseVal.removeItem(2)
@@ -84,6 +85,7 @@ const transform = () => {
 }
 
 export const showModal = (turn, i) => {
+  document.getElementById("graph").innerHTML = "";
   d3.graphviz("#graph").zoom(false).fade(false).renderDot(dotGraph[turn][i - 1].join(''), transform)
   MicroModal.show('modal-graph')
 }
