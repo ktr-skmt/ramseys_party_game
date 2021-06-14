@@ -77,11 +77,13 @@ const dotGraph = [
 const transform = () => {
   const svg = document.getElementById("graph").getElementsByTagName("svg")[0]
   const g = svg.childNodes[1]
-  const pathList = g.getElementsByTagName("path")
   const tfm = svg.createSVGTransform()
   tfm.setTranslate(25.4, 214)
   g.transform.baseVal.removeItem(2)
   g.transform.baseVal.appendItem(tfm)
+  g.id = "sub" + g.id
+  Array.from(g.getElementsByTagName("g"))
+    .forEach( element => element.id = "sub" + element.id )
 }
 
 export const showModal = (turn, i) => {
