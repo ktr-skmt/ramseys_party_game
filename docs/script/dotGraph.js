@@ -81,7 +81,6 @@ const transform = () => {
   tfm.setTranslate(25.4, 214)
   g.transform.baseVal.removeItem(2)
   g.transform.baseVal.appendItem(tfm)
-  svg.set
 }
 
 export const showModal = (turn, i) => {
