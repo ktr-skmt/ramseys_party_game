@@ -2,37 +2,35 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <style>
-      g.edge.emphasized > polygon {
-        stroke: #008000;
-        fill: #008000;
-      }
-      g.edge.emphasized > path {
-        stroke: #008000;
-      }
-      g.node.emphasized > ellipse {
-        stroke: #008000;
-        fill: #ffffff;
-      }
-      g.node.emphasized > text {
-        fill: #008000;
-      }
-      g.node.neighbour > ellipse {
-        stroke: #ff8c00;
-        fill: #ffffff;
-      }
-      g.node.neighbour > text {
-        fill: #ff8c00;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style/focus.css">
+    <link rel="stylesheet" type="text/css" href="style/micromodal.css">
   </head>
   <body>
+    <div class="modal micromodal-slide" id="modal-graph" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-graph-title">
+          <header class="modal__header">
+            <!--<h2 class="modal__title" id="modal-graph-title"></h2>-->
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-graph-content">
+            <div id="graph" style="text-align: center;"></div>
+          </main>
+          <footer class="modal__footer">
+            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="//d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/viz.js@1.8.0/viz.js" type="javascript/worker"></script>
     <script src="https://unpkg.com/d3-graphviz@1.4.0/build/d3-graphviz.min.js"></script>
-    <script src="dot.js"></script>
-    <div id="graph" style="text-align: center;"></div>
-    <script src="focus.js"></script>
-    <script>d3.select('#graph').graphviz().fade(false).renderDot(dot.description[0].join(''), colorEdges);</script>
+    <script src="script/dot.js"></script>
+    <div id="transitions" style="text-align: center;"></div>
+    <script type="module">
+      import { transition } from './script/transitions.js'
+      transition()
+    </script>
   </body>
 </html>

@@ -1,4 +1,6 @@
-const colorEdges = () => {
+import { showModal } from './dotGraph.js'
+
+export const focus = () => {
   const regexEdge = /"([0-9]+-[0-9]+)"\s->\s"([0-9]+-[0-9]+)+"/;
   const regexNode = /^("[0-9]+-[0-9]+";)+$/;
   const regexNodeName = /"([0-9]+-[0-9]+)";/g;
@@ -6,13 +8,14 @@ const colorEdges = () => {
   const nodes = [];
   const emphasized = "emphasized"
   const neighbour = "neighbour"
-  dot['description'].forEach( element => {
+  dot.description.forEach( element => {
     element.map( line => regexEdge.exec(line.trim()) )
       .filter( matcher => matcher != null )
       .forEach( matcher => edges.push(matcher) )
     element.map( line => regexNode.exec(line.trim()) )
       .filter( matcher => matcher != null )
       .forEach( matcher => {
+        let m = null
         while ( (m = regexNodeName.exec(matcher[0])) != null )
           nodes.push(m[1])
       } )
@@ -24,7 +27,10 @@ const colorEdges = () => {
   const coloring = (node) => {
     findNode(node, 1, 2).concat(findNode(node, 2, 1))
       .forEach( n => n.classList.add(neighbour) )
-    nodeElement(node).classList.add(emphasized)
+    const n = nodeElement(node)
+    const turnI = n.getElementsByTagName('title')[0].innerHTML.trim().split("-");
+    n.addEventListener("click", () => showModal(turnI[0], turnI[1]), false)
+    n.classList.add(emphasized)
     edges.filter( matcher => matcher[1] == node || matcher[2] == node )
       .map( t => edges.indexOf(t) )
       .map( index => index + 1 )

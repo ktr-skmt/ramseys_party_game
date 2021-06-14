@@ -1,10 +1,10 @@
-const dot = {
+export const dot = {
   'description': [
     [
       'digraph graph_name {',
       '  graph [',
       '    charset = "UTF-8";',
-      '    label = "K6 - Turn 7-1",',
+      '    label = "K6 - Turn 9-1",',
       '    labelloc = "t",',
       '    labeljust = "c",',
       '    bgcolor = "#f0f0f0",',
@@ -58,10 +58,10 @@ const dot = {
       '  1 -> 5[label = "E15", color = blue, penwidth = 3];',
       '  1 -> 6[label = "E16", color = red, penwidth = 3];',
       '  2 -> 3[label = "E23", color = blue, penwidth = 3];',
-      '  2 -> 4[label = "E24"];',
+      '  2 -> 4[label = "E24", color = blue, penwidth = 3];',
       '  2 -> 5[label = "E25", color = red, penwidth = 3];',
       '  2 -> 6[label = "E26"];',
-      '  3 -> 4[label = "E34"];',
+      '  3 -> 4[label = "E34", color = red, penwidth = 3];',
       '  3 -> 5[label = "E35"];',
       '  3 -> 6[label = "E36"];',
       '  4 -> 5[label = "E45"];',
