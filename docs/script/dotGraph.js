@@ -79,11 +79,12 @@ const transform = () => {
   const g = svg.childNodes[1]
   const tfm = svg.createSVGTransform()
   tfm.setTranslate(25.4, 214)
-  g.transform.baseVal.removeItem(0)
+  g.transform.baseVal.removeItem(2)
   g.transform.baseVal.appendItem(tfm)
+  svg.set
 }
 
 export const showModal = (turn, i) => {
-  d3.select("#graph").graphviz().fade(false).renderDot(dotGraph[turn][i - 1].join(''), transform)
+  d3.graphviz("#graph").zoom(false).fade(false).renderDot(dotGraph[turn][i - 1].join(''), transform)
   MicroModal.show('modal-graph')
 }
